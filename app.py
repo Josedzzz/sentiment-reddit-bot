@@ -104,10 +104,10 @@ app.layout = html.Div([
     [Output('live-sentiment-graph', 'figure'),
      Output('current-stats', 'children'),
      Output('recent-comments', 'children')],
-    [Input('update-interval', 'n_intervals'),
-     Input('subreddit-selector', 'value')]
+    [Input('update-interval', 'n_intervals')]
 )
-def update_dashboard(subreddit):
+def update_dashboard(n_intervals): 
+    subreddit = "wallstreetbets"
     if not sentiment_history:
         # Create empty figure
         fig = go.Figure()
