@@ -1,0 +1,7 @@
+praw
+vaderSentiment
+dash
+plotly
+pandas
+python-dotenv
+
